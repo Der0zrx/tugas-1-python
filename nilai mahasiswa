@@ -1,0 +1,45 @@
+def main():
+  # Menyambut pengguna
+  print("Selamat datang di Aplikasi Perhitungan Nilai Mahasiswa")
+
+  # Meminta masukan nilai tugas
+  nilai_tugas = float(input("Silahkan Masukan nilai Tugas Anda: "))
+
+  # Meminta masukan nilai UTS
+  nilai_uts = float(input("Silahkan Masukan nilai UTS Anda: "))
+
+  # Meminta masukan nilai UAS
+  nilai_uas = float(input("Silahkan Masukan nilai UAS Anda: "))
+
+  # Menghitung nilai akhir
+  nilai_akhir = (nilai_tugas * 0.25) + (nilai_uts * 0.35) + (nilai_uas * 0.40)
+
+  # Menentukan nilai huruf
+  if nilai_akhir >= 85:
+    nilai_huruf = "A"
+  elif nilai_akhir >= 80:
+    nilai_huruf = "A-"
+  elif nilai_akhir >= 75:
+    nilai_huruf = "B+"
+  elif nilai_akhir >= 70:
+    nilai_huruf = "B"
+  elif nilai_akhir >= 65:
+    nilai_huruf = "B-"
+  elif nilai_akhir >= 60:
+    nilai_huruf = "C+"
+  elif nilai_akhir >= 55:
+    nilai_huruf = "C"
+  elif nilai_akhir >= 50:
+    nilai_huruf = "C-"
+  elif nilai_akhir >= 30:
+    nilai_huruf = "D"
+  else:
+    nilai_huruf = "E"
+
+  # Menampilkan hasil
+  print(f"Nilai Akhir Anda: {nilai_akhir:.2f}")
+  print(f"Dalam Huruf: {nilai_huruf}")
+
+# Memulai program
+if __name__ == "__main__":
+  main()
